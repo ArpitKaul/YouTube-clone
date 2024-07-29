@@ -7,14 +7,14 @@ import { useState } from 'react';
 
 const App = () => {
 
-  const [sidebar , setSidebar] = useState(false )
+  const [sidebar , setSidebar] = useState(false)
 
   return (
     <div>
       <Navbar setSidebar={setSidebar} />
       <Routes>
         <Route path='/' element={<Home sidebar={sidebar} />} />
-        <Route path='/video/:categoryId/:videoId' element={<Video />} />
+        <Route path='/video/:categoryId/:videoId/:extra' element={<Video />} />
       </Routes>
     </div>
   );
