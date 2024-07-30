@@ -17,5 +17,8 @@
     font-size: 13px;
     margin-bottom: 5px ;
 }
-
-/* AIzaSyCVXK6t2hN5qzlD7n3GWco0m055Ylq6m0g */
+@media (max-width:900px){
+    .recommended{
+        flex-basis: 100%;
+    }
+}
